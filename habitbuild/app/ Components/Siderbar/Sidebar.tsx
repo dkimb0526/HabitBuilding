@@ -4,6 +4,8 @@ import styled from "styled-components";
 import {useGlobalState } from "@/app/context/globalProvider";
 import Image from "next/image";
 
+import menu  from "@/app/utils/menu";
+
 function Sidebar(){
 const{ theme } = useGlobalState();
 
@@ -25,6 +27,14 @@ const{ theme } = useGlobalState();
                 </h1>
                 </div>
             </div>
+            <ul className = "nav-items">{menu.map((item)=>{
+                return <li>
+                    {item.icon}
+                    <a href={item.link}>
+                        {item.title}
+                    </a>
+                </li>;
+            })}</ul>
             </SidebarStyled>
     )
 }
