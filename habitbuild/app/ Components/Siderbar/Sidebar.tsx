@@ -100,7 +100,15 @@ const SidebarStyled = styled.nav`
             border: 2px solid ${(props) => props.theme.colorBg2};
             opacity: 0.2;
         }
+        h1 {
+            font-size: 1.2rem;
+            display: flex;
+            flex-direction: column;
+
+            line-height: 1.4rem;
+        }
     }
+    
     
 `;
 export default Sidebar
