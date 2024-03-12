@@ -23,7 +23,7 @@ function Sidebar(){
 
     return(
         <SidebarStyled theme = { theme }>
-            Sidebar
+            
             <div className = "profile">
                 <div className="profile-overlay">
                 </div>
@@ -53,6 +53,7 @@ function Sidebar(){
                     </Link>
                 </li>);
             })}</ul>
+            <button></button>
             </SidebarStyled>
     )
 }
@@ -63,5 +64,9 @@ const SidebarStyled = styled.nav`
     background-color : ${(props) => props.theme.colorBg2};
     border: 2px solid ${(props) => props.theme.borderColor2};
     border-radidus: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 `;
 export default Sidebar
