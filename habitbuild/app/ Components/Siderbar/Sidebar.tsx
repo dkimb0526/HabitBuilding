@@ -5,6 +5,7 @@ import {useGlobalState } from "@/app/context/globalProvider";
 import Image from "next/image";
 
 import menu  from "@/app/utils/menu";
+import Link from "next/link";
 
 function Sidebar(){
 const{ theme } = useGlobalState();
@@ -30,9 +31,9 @@ const{ theme } = useGlobalState();
             <ul className = "nav-items">{menu.map((item)=>{
                 return <li>
                     {item.icon}
-                    <a href={item.link}>
+                    <Link href={item.link}>
                         {item.title}
-                    </a>
+                    </Link>
                 </li>;
             })}</ul>
             </SidebarStyled>
