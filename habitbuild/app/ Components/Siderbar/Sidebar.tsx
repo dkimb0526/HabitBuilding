@@ -93,14 +93,33 @@ const SidebarStyled = styled.nav`
             border-radius: 1rem;
 
             border: 2px solid ${(props) => props.theme.colorBg2};
-            opacity: 0.2;
+            opacity: 0.1;
         }
         h1 {
             font-size: 1.2rem;
             display: flex;
             flex-direction: column;
+            line-height: 1.5rem;
 
-            line-height: 1.4rem;
+        }
+        .image, h1{
+            position: relative;
+            z-index: 1
+        }
+        .image {
+            flex-shrink: 0;
+            display: inline-block;
+            overflow: hidden;
+            transition: all 0.5s ease;
+            border-radius: 100%;
+
+            width: 70px;
+            height: 70px;
+
+            img{
+                border-radius:100%
+                transition: all 0.5s ease;
+            }
         }
     }
     
