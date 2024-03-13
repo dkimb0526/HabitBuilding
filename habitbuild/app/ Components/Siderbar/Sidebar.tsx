@@ -121,6 +121,24 @@ const SidebarStyled = styled.nav`
                 transition: all 0.5s ease;
             }
         }
+
+        > h1 {
+            margin-left: 0.8rem;
+            font-size: clamp(1.2rem, 4vw, 1.4rem);
+            line-height: 100%;
+        }
+
+        &:hover {
+            .profile-overlay{
+                opacity:1;
+                border: 2px solid ${(props) => props.theme.borderColor2};
+
+            }
+
+            img {
+                transform: scale(1.2)
+            }
+        }
     }
     
     
