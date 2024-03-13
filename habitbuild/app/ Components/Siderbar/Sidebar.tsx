@@ -25,19 +25,14 @@ function Sidebar(){
         <SidebarStyled theme = { theme }>
             
             <div className = "profile">
-                <div className="profile-overlay">
-                </div>
+                <div className="profile-overlay"></div>
                 <div className = "image">
-                <Image width = {70} height={70} src = "/luffy.png" alt = "profile" />
-                <h1>
-                    <span>
-                        Luffy
-                    </span>
-                    <span>
-                        Monkey
-                    </span>
-                </h1>
+                    <Image width = {70} height={70} src = "/luffy.png" alt = "profile" />
                 </div>
+                <h1>
+                    <span>Luffy</span>
+                    <span>Monkey</span>
+                </h1>
             </div>
             <ul className = "nav-items">{menu.map((item)=>{
                 const link = item.link;
