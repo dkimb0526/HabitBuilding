@@ -104,7 +104,7 @@ const SidebarStyled = styled.nav`
         }
         .image, h1{
             position: relative;
-            z-index: 1
+            z-index: 1;
         }
         .image {
             flex-shrink: 0;
@@ -117,7 +117,7 @@ const SidebarStyled = styled.nav`
             height: 70px;
 
             img{
-                border-radius:100%
+                border-radius:100%;
                 transition: all 0.5s ease;
             }
         }
@@ -130,13 +130,13 @@ const SidebarStyled = styled.nav`
 
         &:hover {
             .profile-overlay{
-                opacity:1;
+                opacity: 1;
                 border: 2px solid ${(props) => props.theme.borderColor2};
 
             }
 
             img {
-                transform: scale(1.2)
+                transform: scale(1.2);
             }
         }
     }
