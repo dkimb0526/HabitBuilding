@@ -31,7 +31,7 @@ function Sidebar(){
                 </div>
                 <h1>
                     <span>Luffy</span>
-                    <span>Monkey</span>
+                    <span>Monkey D.</span>
                 </h1>
             </div>
             <ul className = "nav-items">{menu.map((item)=>{
@@ -96,7 +96,7 @@ const SidebarStyled = styled.nav`
             opacity: 0.1;
         }
         h1 {
-            font-size: 1.2rem;
+            font-size: 1px;
             display: flex;
             flex-direction: column;
             line-height: 1.5rem;
@@ -124,7 +124,7 @@ const SidebarStyled = styled.nav`
 
         > h1 {
             margin-left: 0.8rem;
-            font-size: clamp(1.2rem, 4vw, 1.4rem);
+            font-size: clamp(1rem, 1rem, 1.4rem);
             line-height: 100%;
         }
 
