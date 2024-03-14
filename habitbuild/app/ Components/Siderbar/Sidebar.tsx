@@ -170,7 +170,16 @@ const SidebarStyled = styled.nav`
             background-color: ${(props) => props.theme.colorGreenDark};
             border-bottom-left-radius: 5px;
             border-top-left-radius: 5px;
-            
+
+        }
+        a{
+            font-weight:500;
+        }
+
+        &:hover {
+            &::after{
+                width:100%;
+            }
         }
     }
     
