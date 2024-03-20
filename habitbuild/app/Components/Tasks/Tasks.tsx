@@ -1,14 +1,12 @@
-"use client";
 import React from "react";
 import styled from "styled-components";
 import { useGlobalState } from "@/app/context/globalProvider";
 
-
-function Tasks(){
+function Tasks() {
     const { theme } = useGlobalState();
     return (
-        <TaskStyled theme= {theme}>Tasks</TaskStyled>
-    )
+        <TaskStyled theme={theme}>Tasks</TaskStyled>
+    );
 }
 
 const TaskStyled = styled.div`
