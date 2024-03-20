@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Sidebar from "./ Components/Siderbar/Sidebar"
+import Sidebar from "./Components/Siderbar/Sidebar"
 import GlobalStyleProvider from "./providers/GlobalStyleProvider";
 import ContextProvider from "./providers/ContextProvider";
 
@@ -30,7 +30,7 @@ export default function RootLayout({
         <ContextProvider>
           <GlobalStyleProvider>
             <Sidebar />
-            {children}
+            <div className="w-full">{children}</div>
           </GlobalStyleProvider>
         </ContextProvider>
       </body>
