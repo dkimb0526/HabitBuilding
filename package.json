@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "styled-components": "^6.1.8"
+  },
+  "devDependencies": {
+    "prisma": "^5.11.0"
   }
 }
