@@ -37,6 +37,8 @@ export async function POST(req: Request) {
             },
         });
 
+        return NextResponse.json(task);
+
     } catch(error){
         console.log("ERROR CREATING TASK: ", error);
         return NextResponse.json({error: "Error creating task", status:500});
