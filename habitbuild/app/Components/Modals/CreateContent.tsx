@@ -9,7 +9,25 @@ function CreateContent(){
     const [important, setImportant] = useState(false);
 
     const handleChange = (name:string) => (e: any) => {
-        
+        switch (name){
+            case "title":
+                setTitle(e.target.value);
+                break;
+            case "description":
+                setDescription(e.target.value);
+                break;
+            case "date":
+                setDate(e.target.value);
+                break;
+            case "completed":
+                setCompleted(e.target.value);
+                break;
+            case "important":
+                setImportant(e.target.value);
+                break;
+            default:
+                break;
+        }
     };
 
 
