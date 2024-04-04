@@ -48,7 +48,9 @@ function CreateContent(){
         try {
             const res = await axios.post("/api/taks", task);
 
-            if()
+            if(res.data.error){
+                toast.error(res.data.error);
+            }
         } catch (error){
 
         }
