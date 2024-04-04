@@ -36,7 +36,7 @@ export async function POST(req: Request) {
                 userId,
             },
         });
-
+        console.log("Task Created", task);
         return NextResponse.json(task);
 
     } catch(error){

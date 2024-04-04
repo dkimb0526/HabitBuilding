@@ -51,7 +51,11 @@ function CreateContent(){
             if(res.data.error){
                 toast.error(res.data.error);
             }
+
+            toast.success("Task created successfully. :)")
         } catch (error){
+            toast.error("Something went wrong. :(");
+            console.log(error);
 
         }
     };
