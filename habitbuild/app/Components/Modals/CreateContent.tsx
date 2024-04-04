@@ -30,6 +30,8 @@ function CreateContent(){
         }
     };
 
+    const handleSubmit = (e: any) => {
+        e.preventDefault();};
 
     return <div>
         <h1>Create a Task</h1>
