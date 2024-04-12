@@ -24,10 +24,10 @@ function CreateContent(){
                 setDate(e.target.value);
                 break;
             case "completed":
-                setCompleted(e.target.value);
+                setCompleted(e.target.checked);
                 break;
             case "important":
-                setImportant(e.target.value);
+                setImportant(e.target.checked);
                 break;
             default:
                 break;
